@@ -1,6 +1,6 @@
 let skills = [
   { skill : 'Laravel' , rating : 5 },
-  { skill : 'Livewire' , rating : 5 },
+  { skill : 'Livewire' , rating : 4 },
   { skill : 'HTML' , rating : 6 },
   { skill : 'CSS' , rating : 5 },
   { skill : 'Javascript' , rating : 6 },
@@ -41,7 +41,7 @@ skillsContainer.innerHTML = skillsTemplate;
 
 
 let contacts = [
-  //{ id : 'sjabd.ir' , icon : 'fa fa-globe' , href : 'https://www.sjabd.ir' },
+  // { id : 'sjabd.ir' , icon : 'fa fa-globe' , href : 'https://www.sjabd.ir' },
   { id : 'mynameissajjad@gmail.com' , icon : 'fa fa-envelope' , href : 'mailto:mynameissajjad@gmail.com' } ,
   //{ id : 'sajjad.abd__' , icon : 'fa fa-instagram' , href : 'https://www.instagram.com/sajjad.abd__' },
   { id : 'sajjad-abdollahi' , icon : 'fa fa-linkedin' , href : 'https://www.linkedin.com/in/sajjad-abdollahi/' },
@@ -81,22 +81,23 @@ let educations = [
   { 
     from : '2010' , 
     to : '2013' , 
-    header : 'مهندسی نرم افزار' , 
-    content : 'دانشگاه مازندران' 
+    header : 'Software Engineering' , 
+    content : 'University Of Mazandaran' 
   } ,
   { 
     from : '2017' , 
     to : '2020' , 
-    header : 'مهندسی نرم افزار' , 
-    content : 'دانشگاه آزاد نکا' ,
+    header : 'Software Engineering' , 
+    content : 'Azad University of Neka' ,
     projectDetails : `
-    پروژه ی اصلی من در دانشگاه
-    <span class="colorText"> الگوریتم watchman route </span>
-    بود که درباره ی پیداکردن کمترین مسیر
-    برای نگهبان بود که باید از همه ی نقاط سرکشی می کرد
-    –
-    که در github 
-    در دسترس می باشد
+    My main project was about
+    <span class="colorText">watchman route problem</span>
+    that
+    is about the smallest routing
+    path a watchman should go
+    to see all the space on the
+    room –
+    available on my github
     github.com/sajjadabd
     `
   } ,
@@ -140,59 +141,48 @@ educationContainer.innerHTML = educationTemplate;
 let workExperiences = [
   { 
     from : '2020' , 
-    to : '2021' , 
-    header : 'فروشگاه اینترنتی' , 
-    subject : 'ساخت و توسعه',
-    content : `
-	لاراول و لایووایر یک جفت بی نظیر برای پیاده سازی طراحی وب اپ یک فروشگاه اینترنتی است که قابلیت های 
-	AJAX
-	و
-	REST API
-	را دارا می باشد
-	`,
+    to : 'NOW' , 
+    header : 'Online Shop' , 
+    subject : 'Creating and Developement',
+    content : `Laravel and Livewire are great pair for designing the architecture of the website 
+	that fully qualified for AJAX behaviour and REST APIs `,
     contentItems : [
-      'توسعه ی منظم ، قابل توسعه ، شی گرا و تست شده ی کد',
-      'پیاده سازی توسعه پذیر RESTful APIs',
+      'developing well-organized, maintainable, object-oriented, unit-tested code',
+      'developing highly scalable and composable RESTful APIs',
     ],
-    beforeTechMargin : 140 ,
+    beforeTechMargin : 80 ,
     technologies : [
-      'احراز هویت و مجوز دسترسی استاندارد مثل Sanctum',
-      'Tailwindcss برای طراحی UI',
-      'استفاده از بسته های نرم افزاری آماده جهت توسعه ی هرچه سریع تر کد',
-      'نوشتن با استاندارد های Clean Code',
+      'Authentication and authorization standards such as Sanctum, OAuth',
+      'Tailwindcss for design',
+      'using common third-party packages and APIs',
+      'Clean Code written',
     ],
     afterTechMargin : 0 ,
     achievements : [
-      'پرداخت درون برنامه ای',
-      'تم بندی نرم افزار با هارمونی رنگ های زیبا',
-      'فرستادن اس ام اس برای احراز هویت کاربر',
+      'In App Billing',
+      'Theming the Software for beautiful Colors',
+      'SMS sending for user authentication',
     ],
   } ,
   { 
     from : '2019' , 
     to : '2021' , 
-    header : 'پروژه ی مدیریت مشتری ها (CRM)' , 
-    subject : 'ساخت و توسعه',
-    content : `سازماندهی و ثبت ارتباطات با کسانی که دوستشان دارید ، یک
-	CRM
-	برای مدیریت روابط با دوستان ، خانواده و مشتری ها `,
+    header : 'CRM Project' , 
+    subject : 'Creating and Developement',
+    content : `organize and record your interactions with your loved ones. a CRM for your friends , family and customers `,
     contentItems : [
-      'ایجاد و مدیریت ارتباطات و تعریف رابطه بین آنها',
-      'آپلود اسناد و عکس ها و ایجاد یادداشت هایی برای کسانی که با آنها در ارتباط هستید',
+      'Add and manage contacts and Define relationships between them',
+      'Upload documents and photos and add notes for a contact',
     ],
     technologies : [
-      'احراز هویت با استفاده از فیسبوک ، گوگل ، گیت هاب و ...',
-      'تست و تایید کد های تولید شده به عنوان بخشی از فرآیند توسعه',
-      `توسعه ی 
-	  RESTful API
-	  برای اپلیکیشن های موبایل
-	  و وب با استفاده از لاراول
-	  `,
+      'Third-party login with Facebook, Google, Twitter, Linked In or GitHub',
+      'Testing and validating work produced as part of the development process',
+      'Developed RESTful API for mobile applications and web applications using Laravel',
     ],
     achievements : [
-      'استفاده از GIT به عنوان سیستم کنترل ورژن ها',
-      'پنل ادمین اختصاصی برای مدیریت',
-      'نوشتن پکیج های اختصاصی PHP',
+      'using GIT as my version control system',
+      'Custom Admin Panel for Management',
+      'Writing custom PHP packages ',
     ],
   } ,
   // { 
@@ -264,7 +254,7 @@ for(let i=0;i<workExperiences.length;i++) {
     ?
     ``
     :
-    `تکنولوژی های مورد استفاده : `
+    `Technologies include:`
     }
     </div>
     `
@@ -299,7 +289,7 @@ for(let i=0;i<workExperiences.length;i++) {
     ?
     ``
     :
-    `دستاوردهای مهم : `
+    `Achievements include:`
     }
     </div>
     `
