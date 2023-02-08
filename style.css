@@ -1,0 +1,506 @@
+:root {
+  --right-top-padding : 30px;
+  --left-top-padding : 0px;
+  --image-size : 200px;
+  --decoration-height : 40vh;
+  /* --text-color : aliceblue; */
+
+  --header-text-color : black;
+
+  --text-color : black;
+
+  --bottom-skew-color : #fefae0;
+  --top-skew-color : #faedcd;
+
+  /* --bottom-skew-color : #360175;
+  --top-skew-color : #21023b; */
+
+  --font-size : 18px;
+
+  --small-font-size : 15px;
+
+  --rounded-border-color : #0096c7;
+
+  --seperator-color : black;
+/*
+  --gradient-from : rgb(33,2,59);
+  --gradient-to : rgba(54,1,117,1);
+*/
+
+  --bold-font-family : Shabnam-Bold-FD;
+  --medium-font-family : Shabnam-Medium-FD;
+  --regular-font-family : Shabnam-FD;
+}
+
+@font-face {
+  font-family: Shabnam-FD;
+  src: url(./fonts/Shabnam-FD.ttf);
+}
+
+@font-face {
+  font-family: Shabnam-Bold-FD;
+  src: url(./fonts/Shabnam-Bold-FD.ttf);
+}
+
+@font-face {
+  font-family: Shabnam-Medium-FD;
+  src: url(./fonts/Shabnam-Medium-FD.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(./fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(./fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+section {
+  position : relative;
+}
+
+
+h1 , h3 {
+  position : relative ;
+  z-index : 100;
+  color : #222;
+  text-align : right;
+  padding-bottom : 10px;
+  margin : 0;
+  color : var(--header-text-color);
+  font-weight : bold;
+}
+
+h1 {
+  font-size : 45px;
+  font-weight: 700;
+  font-family : var(--bold-font-family);
+}
+
+h2 {
+  font-size : 25px;
+  font-weight: 600;
+  font-family : var(--medium-font-family);
+}
+
+h3 {
+  font-size : 25px;
+  font-weight: 600;
+  font-family : var(--medium-font-family);
+}
+
+h4 {
+  font-size : 20px;
+  font-weight: 500;
+  font-family : var(--medium-font-family);
+  padding-bottom : 0;
+  margin-bottom : 0;
+}
+
+h5 {
+  margin : 3px 0;
+  padding : 0;
+  border-radius : 20px;
+  color : coral;
+  display : inline-block;
+}
+
+
+div.topHeader {
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-end;
+  align-items : center;
+  padding-right : 50px;
+}
+
+
+div.header {
+  margin-top : 40px;
+  margin-right : 80px;
+}
+
+div.headerContainer {
+  position : relative;
+}
+
+h2.rounded {
+  padding : 5px 20px;
+  background-color : transparent;
+  display : inline-block;
+  border-right : 5px solid var(--rounded-border-color);
+  border-bottom : 5px solid var(--rounded-border-color);
+  border-radius : 25px;
+  color : var(--text-color);
+  position : relative;
+  z-index : 100;
+  
+}
+
+
+
+div.profilePicture {
+  margin : auto;
+  display : flex;
+  justify-content : center;
+  padding-top : 30px;
+}
+
+img {
+  width : var(--image-size);
+  height : var(--image-size);
+  border-radius : 50%;
+  position : relative;
+  z-index : 100;
+  object-fit: cover;
+  margin : auto;
+  text-align : center;
+  border : 5px solid white;
+}
+
+body {
+  padding : 0;
+  /*padding-right : 1em;*/
+  margin : 0;
+  font-family : var(--regular-font-family);
+  background: var(--gradient-from);
+  background: linear-gradient(90deg, var(--gradient-from) 0%, var(--gradient-to) 100%); 
+}
+
+div.body {
+  display : flex;
+  flex-direction : row;
+  direction : rtl;
+  min-height : 100vh;
+  
+}
+
+div.rightSide {
+  flex : 8;
+  color : var(--text-color);
+  padding : 20px;
+  
+}
+
+div.leftSide {
+  flex : 3;
+  color : var(--text-color);
+  padding : 20px;
+  margin-left : 20px;
+  
+  
+}
+
+
+header {
+  position : relative;
+}
+
+
+div.skewTop1 {
+  background-color : var(--top-skew-color);
+  transform: skewY(10deg) translateY(-25vh);
+  min-width : 100vw;
+  height : var(--decoration-height);
+  position : absolute;
+  z-index : 10;
+}
+
+
+div.skewTop1::after {
+  background-color : var(--bottom-skew-color);
+  transform: skewY(-2deg) translateY(-2vh);
+  min-width : 100vw;
+  height : var(--decoration-height);
+  content : '';
+  position : absolute;
+  z-index : 9;
+}
+
+
+div.skewTop2 {
+  background-color : var(--top-skew-color);
+  transform: skewY(-25deg) translateY(-40vh);
+  min-width : 100vw;
+  height : var(--decoration-height);
+  position : absolute;
+  z-index : 20;
+}
+
+
+div.skewTop2::after {
+  background-color : var(--bottom-skew-color);
+  transform: skewY(2deg) translateY(-2vh);
+  min-width : 100vw;
+  height : var(--decoration-height);
+  content : '';
+  position : absolute;
+  z-index : 19;
+}
+
+
+div.timeline {
+  padding-left : 30px;
+  position : relative;
+}
+
+
+
+h4 {
+  margin : 0;
+  padding : 0;
+}
+
+p {
+  margin : 0;
+  padding-bottom : 10px;
+  line-height : 25px;
+  letter-spacing : 1px;
+  font-size : var(--small-font-size);
+  font-family : var(--regular-font-family);
+}
+
+
+
+div.wrapper {
+  display : flex;
+  flex-direction : column;
+}
+
+div.years {
+  display : flex;
+  flex-direction : row;
+  padding-bottom : 5px;
+  box-sizing : border-box;
+  justify-content: flex-start;
+}
+
+div.works {
+  position : relative;
+}
+
+
+
+
+div.works div.years {
+  display : flex;
+  flex-direction : row;
+  position : absolute;
+  left : 0;
+  padding : 2px 8px;
+  margin-right : 30px;
+  background-color : aliceblue;
+  color : #360175;
+}
+
+div.educations {
+  font-size : var(--small-font-size);
+}
+
+div.educations  h4 , div.educations  p {
+  font-size : var(--small-font-size);
+}
+
+div.educationContent p {
+  font-family : var(--regular-font-family);
+}
+
+div.worksContent p {
+  font-family : var(--regular-font-family);
+  padding-top : 20px;
+  margin-bottom : 0;
+  padding-bottom : 0;
+}
+
+
+/* ul {
+  padding : 0;
+  margin : 0;
+  list-style-type : none;
+}
+
+
+
+ul li {
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  font-family : Ubuntu-Medium;
+} */
+
+ul.skills , ul.contact {
+  padding : 0;
+  margin : 0;
+  list-style-type : none;
+}
+
+ul.skills li , ul.contact li {
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  font-family : var(--medium-font-family);
+}
+
+ul.contentItems {
+  list-style-type : disc;
+}
+
+article#workExperienceContainer p.articleSeperator {
+  margin : 2em;
+}
+
+ul.contentItems li {
+  margin-bottom : 10px;
+}
+
+div.contectItemsHeader {
+  font-family : var(--medium-font-family);
+  font-size : var(--font-size);
+  margin : 10px 0 ;
+}
+
+ul.profile {
+  list-style-type: disc !important;
+  padding-left : 2em;
+}
+
+ul.profile li {
+  letter-spacing : 1px;
+  padding-bottom : 10px;
+  padding-right : 10px;
+  font-family : var(--small-font-size);
+}
+
+span {
+  font-family : var(--medium-font-family);
+  letter-spacing : 1px;
+}
+
+span.icon {
+  font-size : var(--small-font-size);
+  padding : 5px;
+  padding-left : 15px;
+  width : 20px;
+  margin-right : 5px;
+  /* background-color : #0096c7; */
+  color : var(--text-color);
+  display : flex;
+  justify-content : flex-start;
+  align-items : center;
+  border-radius : 50%;
+}
+
+span.contactInfo a {
+  letter-spacing : 0;
+  font-size : var(--small-font-size);
+  font-family : Ubuntu-Medium;
+  direction : ltr;
+}
+
+
+
+ul.contact li {
+  margin-bottom : 10px;
+}
+
+ul.contact li span {
+  display : flex;
+  align-items : center;
+}
+
+
+
+
+div.skillsContainer {
+  display : flex;
+  flex : 1;
+  flex-direction : row;
+  justify-content : space-between;
+  margin-bottom : 10px;
+}
+
+div.skillsPercent span {
+  width : 10px;
+  height : 10px;
+  border : 1px solid var(--text-color);
+  border-radius : 50%;
+  display : inline-block;
+  margin : 0 3px ;
+}
+
+
+div.skillsTitle {
+  font-family : Ubuntu-Medium;
+  letter-spacing : 1px;
+}
+
+
+
+div.skillsPercent span.fill {
+  background-color : var(--text-color);
+}
+
+
+a {
+  text-decoration : none;
+  letter-spacing : 1px;
+  color : var(--text-color);
+}
+
+
+span.colorText {
+  color : var(--rounded-border-color);
+}
+
+h2.simpleHeader {
+  color : var(--text-color);
+  margin-bottom : 3px;
+}
+
+p.seperator {
+  padding : 0;
+  margin :   0 0 20px  0 ;
+  width : 60px;
+  height : 3px;
+  border-radius : 25px;
+  background-color: var(--seperator-color);
+}
+
+
+ul li {
+  font-size : var(--small-font-size);
+  font-family : var(--regular-font-family);
+}
+
+@media print {
+  h1 {
+    font-size : 45px;
+    font-weight: 900;
+    font-family : var(--bold-font-family);
+  }
+
+  h2 {
+    font-size : 25px;
+    font-weight: 700;
+    font-family : var(--medium-font-family);
+  }
+  
+  h3 {
+    font-size : 25px;
+    font-weight: 700;
+    font-family : var(--medium-font-family);
+  }
+  
+}
