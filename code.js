@@ -1,4 +1,5 @@
 let skills = [
+  { skill : 'PHP' , rating : 6 },
   { skill : 'Laravel' , rating : 5 },
   { skill : 'Livewire' , rating : 4 },
   { skill : 'HTML' , rating : 6 },
