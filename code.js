@@ -46,7 +46,7 @@ let contacts = [
   { id : 'mynameissajjad@gmail.com' , icon : 'fa fa-envelope' , href : 'mailto:mynameissajjad@gmail.com' } ,
   //{ id : 'sajjad.abd__' , icon : 'fa fa-instagram' , href : 'https://www.instagram.com/sajjad.abd__' },
   { id : 'sajjad-abdollahi' , icon : 'fa fa-linkedin' , href : 'https://www.linkedin.com/in/sajjad-abdollahi/' },
-  { id : '+98 938 130 8994' , icon : 'fa fa-whatsapp' , href : 'https://wa.me/+989381308994' },
+  { id : '+98 938 130 8994' , icon : 'fa fa-phone' , href : 'tg://resolve?domain=+989381308994' },
   //{ id : '+98 938 130 8994' , icon : 'fa fa-phone' , href : 'tel:+989381308994' },
   { id : 'sjabd' , icon : 'fa fa-telegram' , href : 'https://t.me/+989381308994' },
   
